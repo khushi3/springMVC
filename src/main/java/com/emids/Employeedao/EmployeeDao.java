@@ -1,5 +1,11 @@
 package com.emids.Employeedao;
 
-public class EmployeeDao {
+import java.util.List;
 
+import com.emids.springModel.Employee;
+
+public interface EmployeeDao {
+
+	public void addEmployee(Employee employee);
+	
 }

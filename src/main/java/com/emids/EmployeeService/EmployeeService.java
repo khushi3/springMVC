@@ -1,5 +1,8 @@
 package com.emids.EmployeeService;
 
-public class EmployeeService {
+import com.emids.springModel.Employee;
+
+public interface EmployeeService {
+	public void addEmployee(Employee employee);
 
 }
