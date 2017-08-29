@@ -24,6 +24,13 @@ public class EmployeeController {
 			  employeeService.addEmployee(employee);
 			  return new ModelAndView("redirect:/add.html");
 			 }
+	@RequestMapping(value = "/add", method = RequestMethod.GET)
+	public ModelAndView addEmployee(@ModelAttribute("command")  EmployeeBean employeeBean,
+			BindingResult result) {
+		Map<String, Object> model = new HashMap<String, Object>();
+		model.put("employees",  prepareListofBean(employeeService.listEmployeess()));
+		return new ModelAndView("addEmployee", model);
+	}
 	 private Employee prepareModel(EmployeeBean employeeBean){
 		  Employee employee = new Employee();
 		  employee.setEmpAddress(employeeBean.getAddress());
