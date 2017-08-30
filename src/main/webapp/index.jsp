@@ -8,6 +8,7 @@
   </head>
   <body>
     <h2>Spring MVC </h2>
-    <h2><a href="add.html">Add Employee</a></h2>
+    <h2>1. <a href="employees.html">List of Employees</a></h2>
+    <h2>2. <a href="add.html">Add Employee</a></h2>
   </body>
 </html>
